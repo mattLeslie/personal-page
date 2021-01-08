@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Matt Leslie</title>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        a{
+            text-decoration: none;
+            color: grey;
+        }
+
+        .top-bar {
+            font-size:large;
+            color: grey;
+            margin: auto;
+            padding-bottom: 8px;
+            max-width: 55%;
+        }
+
+        .nav-bar{
+            justify-self: right;
+            word-spacing: 20px;
+            float: right;
+        }
+
+        .contact-bar {
+            font-size: medium;
+            color: grey;
+            max-width: 55%;
+            margin: auto;
+            text-align: center;
+            padding-top: 8px;
+            word-spacing: 40px;
+        }
+
+        .content-box {
+            background-color: white;
+            border-top: 3px solid red;
+            border-bottom: 3px solid red;
+            max-height: 70%;
+            max-width: 55%;
+            margin: auto;
+            text-align: center;
+            font-size: x-large;
+            color: rgb(63, 58, 58);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <a href='/index' target="_blank">Matt Leslie</a>
+        <span class="nav-bar">
+            <a href='/about' target="_blank">About</a>
+            <a href='/projects' target="_blank">Projects</a>
+            <a href='/trips' target="_blank">Trips</a>
+            <a href='/blog ' target="_blank">Blog</a>
+        </span>
+    </div>
+    <div class="content-box">
+        {%block content%}{%endblock%}
+    </div>
+    <div class="contact-bar">
+        <a href="mailto: matt.127.leslie@gmail.com">Email</a>
+        <a href="https://github.com/mattLeslie" target="_blank">Git</a>
+        <a href="https://www.linkedin.com/in/matt-leslie-59306a203/" target="_blank">LinkedIn</a>
+    </div>
+</body>
+
+</html>
