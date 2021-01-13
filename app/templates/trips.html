@@ -1,5 +1,71 @@
 {%extends "base.html"%}
 {%block content%}
+<head>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: auto;
+        }
 
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+            margin: auto;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .tile {
+            width: 40vmin;
+            height: 40vmin;
+            margin-left: 45px;
+            margin-right: 45px;
+            border-radius: 30px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="tile">
+                <img src="../static/bombay_boys.jpg">
+            </div>
+            <div class="tile">
+                <img src="../static/salton.JPG">
+            </div>
+        </div>
+        <div class="row">
+            <div class="tile">
+                <img src="../static/wasteland.JPG">
+            </div>
+            <div class="tile">
+                <img src="../static/hetch_hetchy.JPG">
+            </div>
+        </div>
+        <div class="row">
+            <div class="tile">
+                <img src="../static/manzanita.JPG">
+            </div>
+            <div class="tile">
+                <img src="../static/tree_man.jpg">
+            </div>
+        </div>
+    </div>
+</body>
 
 {%endblock%}
